@@ -1,0 +1,85 @@
+// WELCOME MESSAGES
+Welcome to the new Music Swop Shop website!
+The Swoppy's new online store for second hand musical equipment!
+
+
+// NEW ARRIVALS
+Some of our newest arrivals! (Click on 'What's New' to see more!)
+
+
+// SEE OUR SPECIAL ITEMS
+
+
+//FOOTER CONTENT
+Music Swop Shop
+Trusted by musicians since 1982
+145-147 Elgin Street. Carlton Victoria 3053 AUSTRALIA
+ph. +61 3 9348 1194
+
+
+//OPENING HOURS
+Monday - Friday: 11 AM to 6 PM
+Saturday - Sunday: 11 AM to 3 PM
+
+//MENU 1
+GUITARS AND BASES
+    Electric Guitars 
+    Acoustic Guitars
+    12 String Electric
+    12 String Acoustic
+    Classical/Nylon String
+    Hollowbody Electric Guitars
+    Bass Guitars
+    Acoustic and Upright Basses
+    Pedal Steel Guitars
+    Guitar Parts
+    Left Handed Guitars
+KEYBOARDS AND SYNTHESISERS
+    Pianos and Organs
+    Keyboards, Synths and Controllers
+    Accordions
+    Digital Pianos
+    Keyboard Accessories
+BRASS AND WOODWIND
+    Saxophones
+    Flutes 
+    Clarinets
+    Tubas
+    Trombones
+    French Horns
+    Oboes
+    Recorders
+    Harmonicas
+DRUMS AND PERCUSSIONS
+    Drum kits 
+    Snares, Toms and Bass Drums 
+    Hats and Cymbals
+    Drum Hardware
+    Accessories
+MORE STRING INTRUMENTS
+    Violin
+    Banjos
+    Ukuleles
+    Mandolins and Mandolas
+    Cellos
+ACCESSORIES
+    Pickups
+    Strings
+    Miscellaneous Accessories
+    Cases and Stands
+ELECTRONICS
+    Effects and Rack Units
+    Live and Studio Gear
+    Amplifiers and Speaker Cabs
+    Drum Machines and Sound Modules
+
+OTHER
+
+//MENU 2
+Contact Us
+About Us
+Repairs - 3 subcategories (Dalby, Lovell, OEM)
+
+//HEADER FUNCTIONALITIES
+Search
+Cart 

@@ -1,0 +1,30 @@
+:root{
+    --color-primary: black;
+    --color-secondary: blue;
+
+    --color-text: #FFFFFF;
+    --color-border:  
+
+    --color-success:
+    --color-error:
+    --color-warning:
+
+}
+
+
+body {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+}
+
+h2{
+    color: var(--color-secondary);
+}
+
+h3{
+    color:aqua;
+}
+
+nav{
+    background: linear-gradient(to bottom, #C64C00, black);
+}
