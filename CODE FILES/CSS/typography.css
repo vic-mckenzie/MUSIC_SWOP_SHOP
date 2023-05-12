@@ -5,13 +5,18 @@ body {
 
 }
 
+@font-face {
+    font-family: Blackletter97;
+    src: url("../../ASSETS/blackletter_97/Blackletter97.ttf");
+}
+
 :root{
-    
+    font-small: 150px;
 }
 
 
 h1{
-    font-family: 'Vina Sans', cursive;
+    font-family: 'Blackletter97', sans-serif;
     font-size: 150px;
 }
 
