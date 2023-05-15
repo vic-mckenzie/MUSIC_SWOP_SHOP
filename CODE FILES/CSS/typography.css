@@ -1,13 +1,16 @@
 body {
-    font-family: 'Space Grotesk', sans-serif;
-    font-family: 'Kanit', sans-serif;
-    font-family: 'Passion One', cursive;
+    font-family: Arial, Helvetica, sans-serif
 
 }
 
 @font-face {
     font-family: Blackletter97;
     src: url("../../ASSETS/blackletter_97/Blackletter97.ttf");
+}
+
+@font-face {
+    font-family: Menlo;
+    src: url("../../ASSETS/menlo/Menlo-Regular.woff");
 }
 
 :root{
@@ -19,6 +22,17 @@ h1{
     font-family: 'Blackletter97', sans-serif;
     font-size: 150px;
 }
+
+h3{
+    font-family: Menlo;
+    text-transform:uppercase;
+}
+
+body{
+    font-family: Menlo;
+    color: white;
+}
+
 
 
 

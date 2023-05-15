@@ -22,7 +22,7 @@ h2{
 }
 
 h3{
-    color:aqua;
+    color:var(--color-text);
 }
 
 nav{
