@@ -28,6 +28,11 @@ h3{
     text-transform:uppercase;
 }
 
+p{
+    font-family: Menlo;
+    color: white;
+}
+
 body{
     font-family: Menlo;
     color: white;

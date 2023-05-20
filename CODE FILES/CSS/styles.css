@@ -82,7 +82,6 @@
     font-size: 1.5rem;
 }
 
-
 #shop-brass{
     position: absolute;
     left: 150px;
@@ -101,6 +100,62 @@
     font-size: 1.5rem;
 }
 
+
+/* BROWSING FILTER */
+.filter{
+    height:70px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.filter > *{
+    background-color: black;
+    color: white;
+    background:none;
+    border:none;
+    margin-top:5px;
+    padding:10px;
+}
+
+.filter > i{
+    position: relative;
+    top: -5px;
+}
+
+
+/* BROWSING TITLE */
+.title-1{
+    display: flex;
+    height: 70px;
+    margin-top: 30px;
+}
+
+.title-1 > h3 {
+    padding: 1rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    margin-left: 1rem;
+}
+
+.title-2{
+    display: flex;
+    height: 30px;
+}
+
+.title-2 > p {
+    padding: 1rem;
+    padding-top: 0rem;
+    margin-left: 1rem;
+}
+
+
+
+
+
+/* ************ TEMPLATE COMPONENTS ********** */
 
 /* NAV BAR */
 nav {
@@ -149,10 +204,37 @@ nav > .search__cart > .cart{
     height: 35px;
 }
 
+/* BANNER */
+#banner{
+    margin-top: 70px;
+    background-image: url("../../ASSETS/banner.png");
+    background-repeat: repeat-x;
+    height: 200px;
+}
+
+/* FOOTER */
+footer{
+    height: 100px;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+} 
+
+footer > .logo {
+    width: 150px;
+    height: 100px;
+}
 
 
 
 
+
+
+
+
+/* ************** HOME PAGE ************** */
 /* WELCOME MESSAGE */
 .welcome__message{
     position: absolute;
@@ -189,10 +271,6 @@ nav > .search__cart > .cart{
 .welcome__message > .second-welcome > h3 + h3 + h3 + h3 {
     margin-top: 0rem;
 }
-
-
-
-
 
 /* BACKGROUND IMAGES */
 #background__container{
@@ -250,32 +328,7 @@ nav > .search__cart > .cart{
 
 
 
-/* BANNER */
-#banner{
-    margin-top: 70px;
-    background-image: url("../../ASSETS/banner.png");
-    background-repeat: repeat-x;
-    height: 200px;
-}
-
-
-
-/* FOOTER */
-footer{
-    height: 100px;
-    margin: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-} 
-
-footer > .logo {
-    width: 150px;
-    height: 100px;
-}
-
-
+/* ************** BROWSING PAGE ************** */
 /* PRODUCT CARDS */
 /* TALK ABOUT CHANGE TO HOVER FULL BODY */
 
@@ -301,7 +354,7 @@ footer > .logo {
 }
 
 .product-card:hover{
-    background-color: rgba(102, 102, 102, 0.141);
+    background-color: rgba(102, 102, 102, 0.219);
     transition: all 0.4s ease-in;
 }
 
