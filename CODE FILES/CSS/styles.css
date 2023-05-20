@@ -279,7 +279,6 @@ footer > .logo {
 /* PRODUCT CARDS */
 /* TALK ABOUT CHANGE TO HOVER FULL BODY */
 
-/* MEDIA QURY TO GRID */
 .grid-container{
     display: grid;
     width: auto;
@@ -288,38 +287,48 @@ footer > .logo {
     justify-items: center;
     justify-content: center;
     gap:20px;
+    margin: 10px;
 }
-/* 
-.grid-item{
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-} */
 
 .product-card{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    width: 150px;
+    width: 25vw;
     text-align: center;
+    align-items: center;
 }
 
-.product-card > p {
-    padding: 10px;
+.product-card:hover{
+    background-color: rgba(102, 102, 102, 0.141);
+    transition: all 0.4s ease-in;
+}
+
+.product-card > * {
+    padding: 20px;
+}
+
+.product-card > * + *{
+    padding: 15px;
 }
 
 .grid-container > .product-card > img{
-    height: 220px;
+    height: 190px;
+    width: 140px;
 }
 
 
+
+/* MEDIA QUERIES */
 @media screen and (max-width: 1000px) {
     .grid-container{
         width: auto;
         grid-template-columns: 1fr 1fr;
     }
+    .product-card{
+        width: 50vw;
+    }
+    
 }
 
 
