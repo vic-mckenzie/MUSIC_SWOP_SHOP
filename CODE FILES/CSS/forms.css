@@ -1,0 +1,33 @@
+form{
+    width: 80vw;
+    background-color: black;
+    padding: 1vw;
+    font-family: Menlo;
+    color: white;
+    text-transform: uppercase;
+}
+
+form label {
+    display: inline-block;
+    width: 40vw;
+    margin-right: 0rem;
+}
+
+form input{
+    width: 40vw;
+    margin: 0rem;
+    padding: 0.5rem;
+    border-radius: 0.8vw;
+}
+
+input:valid{
+    background-color: lightblue;
+}
+
+input:invalid{
+    background-color: lightpink;
+}
+
+input:focus{
+    border-color: aqua;
+}

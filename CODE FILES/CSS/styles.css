@@ -560,27 +560,25 @@ footer > .logo {
     width: 80vw;
 }
 
-/* REFACTOR */
+/* REFACTOR? */
 .checkout-area{
     display: flex;
     justify-content: center;
 }
 
-
-
-
-
-
-
-
+.form > p {
+    padding: 2rem;
+    padding-left: 0.7rem;
+}
 
 /* FORM */
+/* SEE FORMS.CSS FOR STYLING */
 
 
 
 
 
-/* MEDIA QUERIES */
+/************** MEDIA QUERIES *************/
 @media screen and (max-width: 1000px) {
     .grid-container{
         width: auto;
