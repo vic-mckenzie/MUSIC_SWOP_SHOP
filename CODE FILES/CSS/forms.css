@@ -1,10 +1,11 @@
 form{
-    width: 80vw;
+    width: 50vw;
     background-color: black;
-    padding: 1vw;
+    padding: 1rem;
     font-family: Menlo;
     color: white;
     text-transform: uppercase;
+    display: flex;
 }
 
 form label {
@@ -14,6 +15,7 @@ form label {
 }
 
 form input{
+    display: inline-block;
     width: 40vw;
     margin: 0rem;
     padding: 0.5rem;
