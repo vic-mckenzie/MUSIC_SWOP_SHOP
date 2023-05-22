@@ -418,7 +418,6 @@ footer > .logo {
     align-self: flex-start;
 }
 
-
 .photo-view{
     display: flex;
     flex-direction: row;
@@ -471,6 +470,114 @@ footer > .logo {
     background: none;
     border: none;
 }
+
+
+/* ***************** CHECKOUT ************** */
+/* CART */
+.cart-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+.cart-content > *{
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+}
+
+.cart-title{
+    padding: 2rem;
+}
+
+.cart-image > img{
+    width: 15vw;
+}
+
+.subtotal{
+    display: flex;
+    justify-content: space-between;
+}
+
+.subtotal{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+.subtotal-price{
+    padding: 2rem;
+}
+
+/* REFACTOR THIS */
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.express-checkout{
+    display: flex;
+    flex-direction: column;
+}
+
+.express-checkout > img{
+    width: 15rem;
+    margin: 2rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    padding: 1.3rem;
+}
+
+.express-checkout > p {
+    margin: 2rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    padding: 2rem;
+}
+
+.checkout{
+    display: flex;
+    flex-direction: row;
+}
+
+.checkout > p {
+    margin: 2rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    padding: 2rem;
+}
+
+.checkout-btn{
+    border-radius: 0.5rem;
+    border: none;
+    background-color: rgb(144, 38, 0);
+    width: 80vw;
+}
+
+/* REFACTOR */
+.checkout-area{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+/* FORM */
+
+
+
 
 
 /* MEDIA QUERIES */
