@@ -544,6 +544,7 @@ footer > .logo {
 .checkout{
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .checkout > p {
@@ -558,6 +559,7 @@ footer > .logo {
     border: none;
     background-color: rgb(144, 38, 0);
     width: 80vw;
+    margin-top: 2rem;
 }
 
 /* REFACTOR? */

@@ -1,16 +1,17 @@
 form{
-    width: 50vw;
+    width: 40rem;
     background-color: black;
     padding: 1rem;
     font-family: Menlo;
     color: white;
     text-transform: uppercase;
     display: flex;
+    flex-wrap: wrap;
 }
 
 form label {
     display: inline-block;
-    width: 40vw;
+    width: 40rem;
     margin-right: 0rem;
 }
 
