@@ -29,16 +29,6 @@
   animation-duration: 0.4s
 }
 
-.cart-modal-content{
-  margin-left: auto;
-}
-
-
-.menu-modal-content {
-  margin-right: auto;
-}
-
-
 
 /* Add Animation */
 @-webkit-keyframes animatetop {
@@ -97,6 +87,10 @@
 
 
 /* CART */
+.cart-modal-content{
+  margin-left: auto;
+}
+
 .cart-slide-container{
     display: flex;
     flex-direction: row;
@@ -112,6 +106,7 @@
 
 /* MENU */
 .menu-modal-content{
+  margin-right: auto;
   background: linear-gradient(to bottom, #C64C00, #421901, black);
 }
 
@@ -176,3 +171,42 @@ button.accordion:hover, button.accordion.is-open {
 .accordion-content > a:hover{
   color: rgb(201, 74, 0);
 }
+
+
+/* SEARCH */
+.search-modal-content{
+  margin-left: auto;
+  margin-right: auto;
+  height: 5rem;
+  width: 55vw;
+  top: 15rem;
+  background-color: #6b6a6ae0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+.search-modal-content > input{
+  height: 3rem;
+  padding: 0.5rem;
+  width: 50vw;
+  margin-top: 0.3rem;
+  margin-right: 0.5rem;
+  border-color: #C64C00;
+  font-family: Menlo;
+  font-size: large;
+  padding-left: 2rem;
+}
+
+.search-modal-content > input::placeholder{
+  font-family: Menlo;
+  padding-left: 1rem;
+  font-size: large;
+}
+
+#searchModal{
+  background-color: rgba(0, 0, 0, 0.85); /* darker black */
+}
+
+

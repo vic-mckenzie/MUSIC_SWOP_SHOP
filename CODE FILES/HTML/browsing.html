@@ -5,27 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
     <link rel="stylesheet" href="../CSS/reset.css">
     <link rel="stylesheet" href="../CSS/colours.css">
     <link rel="stylesheet" href="../CSS/styles.css">
     <link rel="stylesheet" href="../CSS/typography.css">
+    <link rel="stylesheet" href="../CSS/modals.css">
 
     <link rel="icon" type="image/x-icon" href="../../ASSETS/logo_black.png">
 
     <script src="https://kit.fontawesome.com/b9b6ae26df.js" crossorigin="anonymous"></script>
 
 
+
     <title>Music Swop Shop</title>
 </head>
 <body>
 
-    <!-- NAV BAR -->
+
+<!-- NAV BAR -->
 <nav>
-    <img src="../../ASSETS/menu-burger.png" alt="menu-burger" class="burger">
+    <img src="../../ASSETS/menu-burger.png" alt="menu-burger" class="burger" id="menuBtn" onclick="menuFunction()">
     <img src="../../ASSETS/logo.png" alt="logo" class="logo">
     <div class="search__cart">
-        <img src="../../ASSETS/search.png" alt="search" class="search">
-        <img src="../../ASSETS/cart.png" alt="cart" class="cart">
+        <img src="../../ASSETS/search.png" alt="search" class="search" id="searchBtn" onclick="searchFunction()">
+        <img src="../../ASSETS/cart.png" alt="cart" class="cart" id="cartBtn" onclick="cartFunction()">
     </div>
 </nav>
 
@@ -152,6 +156,147 @@
     <p>ph. +61 3 9348 1194</p>
     </div>
 </footer>
+
+
+<!-- MODALS -->
+<!-- CART -->
+<div id="cartModal" class="modal">
+    <div class="modal-content cart-modal-content">
+      <div class="modal-header">
+        <span class="cartClose">&times;</span>
+      </div>
+      <div class="modal-body">
+        <p>CART</p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="1" viewBox="0 0 1473 1" id="long-line">
+          <line id="Line_96" data-name="Line 96" x2="1473" transform="translate(0 0.5)" fill="none" stroke="white" stroke-width="2"/>
+        </svg> 
+        <div class="cart-slide-container">
+            <div class="product-card">
+                <img src="../../ASSETS/guitar-2.png" alt="guitar-7">
+                <p>Huxley - HA2 BK</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="132" height="40" viewBox="0 0 132 40">
+                  <g id="Group_125" data-name="Group 125" transform="translate(-0.449)">
+                    <g id="Rectangle_53" data-name="Rectangle 53" transform="translate(0.449)" fill="#f7ecec" stroke="#707070" stroke-width="1">
+                      <rect width="132" height="40" rx="4" stroke="none"/>
+                      <rect x="0.5" y="0.5" width="131" height="39" rx="3.5" fill="none"/>
+                    </g>
+                    <text id="_1" data-name="1" transform="translate(62.449 23)" font-size="12" font-family="Menlo-Regular, Menlo"><tspan x="0" y="0">1</tspan></text>
+                    <text id="_-" data-name="-" transform="translate(18.449 23)" font-size="12" font-family="Menlo-Regular, Menlo"><tspan x="0" y="0">-</tspan></text>
+                    <text id="_" data-name="+" transform="translate(102.449 23)" font-size="12" font-family="Menlo-Regular, Menlo"><tspan x="0" y="0">+</tspan></text>
+                    <line id="Line_59" data-name="Line 59" y2="24.416" transform="translate(49.028 8.59)" fill="none" stroke="#707070" stroke-width="1"/>
+                    <line id="Line_58" data-name="Line 58" y2="24.416" transform="translate(81.256 8.59)" fill="none" stroke="#707070" stroke-width="1"/>
+                  </g>
+                </svg>
+                <p>$690</p>
+            </div> 
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="1" viewBox="0 0 1473 1" id="long-line">
+            <line id="Line_96" data-name="Line 96" x2="1473" transform="translate(0 0.5)" fill="none" stroke="white" stroke-width="2"/>
+        </svg> 
+        <div class="subtotal modal-subtotal">
+              <p>SUBTOTAL</p>
+              <p>$690</p>
+        </div>
+        <div class="checkout-area">
+            <button type="submit" class="btn btn-primary checkout-btn">CHECKOUT</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- MENU -->
+  <div id="menuModal" class="modal">
+    <div class="menu-modal-content modal-content">
+      <div class="modal-header">
+        <span class="menuClose">&times;</span>
+      </div>
+      <div class="modal-body">
+        <img src="../../ASSETS/logo.png" alt="logo" class="logo">
+  
+        <div class="menu-container">
+          <button class="accordion">GUITARS</button>
+          <div class="accordion-content">
+            <a href="#">Electric Guitars</a>
+            <a href="#">Acoustic Guitars</a>
+            <a href="#">12 String Electric</a>
+            <a href="#">12 String Acoustic</a>
+            <a href="#">Classical/Nylon String</a>
+            <a href="#">Hollowbody Electric Guitars</a>
+            <a href="#">Bass Guitars</a>
+            <a href="#">Acoustic and Upright Basses</a>
+            <a href="#">Pedal Steel Guitars</a>
+            <a href="#">Guitar Parts</a>
+          </div>
+        
+          <button class="accordion">KEYBOARDS</button>
+          <div class="accordion-content">
+            <a href="#">Pianos and Organs</a>
+            <a href="#">Keyboards, Synths and Controllers</a>
+            <a href="#">Accordions</a>
+            <a href="#">Digital Pianos</a>
+            <a href="#">Keyboard Accessories</a>
+          </div>
+        
+          <button class="accordion">BRASS</button>
+          <div class="accordion-content">
+            <a href="#">Saxophones</a>
+            <a href="#">Flutes </a>
+            <a href="#">Clarinets</a>
+            <a href="#">Tubas</a>
+            <a href="#">Trombones</a>
+            <a href="#">French Horns</a>          
+            <a href="#">Oboes</a>
+            <a href="#">Recorders</a>
+            <a href="#">Harmonicas</a>
+          </div>
+  
+          <button class="accordion">DRUMS</button>
+          <div class="accordion-content">
+            <a href="#">Drum kits </a>
+            <a href="#">Snares, Toms and Bass Drums</a>          
+            <a href="#">Hats and Cymbals</a>
+            <a href="#">Drum Hardware</a>
+            <a href="#">Accessories</a>
+          </div>
+  
+          <button class="accordion">STRINGS</button>
+          <div class="accordion-content">
+            <a href="#">Violin</a>
+            <a href="#">Banjos</a>
+            <a href="#">Ukuleles</a>
+            <a href="#">Mandolins and Mandolas</a>
+            <a href="#">Cellos</a>
+          </div>
+  
+          <button class="accordion">ACCESSORIES</button>
+          <div class="accordion-content">
+            <a href="#">Pickups</a>
+            <a href="#">Strings</a>
+            <a href="#">Miscellaneous Accessories</a>
+            <a href="#">Cases and Stands</a>
+          </div>
+  
+          <button class="accordion">ABOUT US</button>
+          <div class="accordion-content">
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+<!-- SEARCH -->
+<div id="searchModal" class="modal">
+    <div class="search-modal-content modal-content">
+      <input type="text" id="search-input" name="search-input" placeholder="SEARCH...">
+      <i class="fas fa-search fa-lg" style="color: #ffffffe8;"></i>
+    </div>
+  </div>
+  
+
+
+    <script src="../JS/script.js"></script>
+
 
 </body>
 </html>

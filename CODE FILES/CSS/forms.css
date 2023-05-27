@@ -23,14 +23,14 @@ form input{
     border-radius: 0.3rem;
 }
 
-input:valid{
-    background-color: lightblue;
+form input:valid{
+    background-color: rgb(143, 176, 169);
 }
 
-input:invalid{
-    background-color: lightpink;
+form input:invalid{
+    background-color: rgb(198, 143, 126);
 }
 
-input:focus{
-    border-color: aqua;
+form input:focus{
+    border-color: rgb(250, 207, 160);
 }
