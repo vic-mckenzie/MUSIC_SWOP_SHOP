@@ -1,5 +1,5 @@
 form{
-    width: 40rem;
+    width: 40vw;
     background-color: black;
     padding: 1rem;
     font-family: Menlo;
@@ -12,15 +12,15 @@ form{
 form label {
     display: inline-block;
     width: 40rem;
-    margin-right: 0rem;
+    margin-top: 0.8rem;
 }
 
 form input{
     display: inline-block;
     width: 40vw;
     margin: 0rem;
-    padding: 0.5rem;
-    border-radius: 0.8vw;
+    padding: 0.4rem;
+    border-radius: 0.3rem;
 }
 
 input:valid{

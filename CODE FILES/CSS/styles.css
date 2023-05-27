@@ -528,16 +528,11 @@ footer > .logo {
 
 .express-checkout > img{
     width: 15rem;
-    margin: 2rem;
-    margin-top: 0rem;
-    margin-bottom: 0rem;
     padding: 1.3rem;
+    margin-left: auto;
 }
 
 .express-checkout > p {
-    margin: 2rem;
-    margin-top: 0rem;
-    margin-bottom: 0rem;
     padding: 2rem;
 }
 
