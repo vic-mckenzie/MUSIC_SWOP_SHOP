@@ -490,7 +490,7 @@ footer > .logo {
 
 }
 
-.cart-title{
+.checkout-title{
     padding: 2rem;
 }
 
@@ -506,9 +506,8 @@ footer > .logo {
 .subtotal{
     display: flex;
     justify-content: space-between;
-    margin: 2rem;
-    margin-top: 0rem;
-    margin-bottom: 0rem;
+    margin-right: 2rem;
+    margin-left: 6rem;
 }
 
 .subtotal-price{
@@ -570,6 +569,61 @@ footer > .logo {
 
 /* FORM */
 /* SEE FORMS.CSS FOR STYLING */
+
+
+/* ***************** CONFIRMATION PAGE **************** */
+.confirmation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+}
+
+.confirmation > .cart-content > .cart-image > img{
+    width: 10vw;
+}
+
+.confirmation > *{
+    margin: 1rem;
+}
+
+.confirmation > .checkout-btn {
+    width: 40vw;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+.confirmation > .cart-content{
+    margin: 2rem;
+}
+
+.confirmation > h3{
+    font-size: 2rem;
+}
+
+.confirmation > hr{
+    width: 50vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
