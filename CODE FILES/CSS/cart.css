@@ -1,6 +1,7 @@
 body {font-family: Arial, Helvetica, sans-serif;}
 
 /* The Modal (background) */
+/* make modal class */
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -19,7 +20,6 @@ body {font-family: Arial, Helvetica, sans-serif;}
 .modal-content {
   position: relative;
   background-color: #363636e0;
-  margin-left: auto;
   padding: 0;
   width: 20rem;
   height: 100vh;
@@ -29,6 +29,17 @@ body {font-family: Arial, Helvetica, sans-serif;}
   animation-name: animatetop;
   animation-duration: 0.4s
 }
+
+.cart-modal-content{
+  margin-left: auto;
+}
+
+
+.menu-modal-content {
+  margin-right: auto;
+}
+
+
 
 /* Add Animation */
 @-webkit-keyframes animatetop {
@@ -42,19 +53,39 @@ body {font-family: Arial, Helvetica, sans-serif;}
 }
 
 /* The Close Button */
-.close {
+.menuClose {
   color: white;
   float: right;
   font-size: 28px;
   font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+.menuClose:hover,
+.menuClose:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
 }
+
+.cartClose {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.cartClose:hover,
+.cartClose:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+
+
 
 .modal-header {
   padding: 80px 30px;
