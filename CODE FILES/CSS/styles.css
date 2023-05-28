@@ -2,7 +2,7 @@
 
 }
 
-/* html{ 
+html{ 
     box-sizing: border-box;
 }
 
@@ -10,7 +10,7 @@
 *:before,
 *:after {
     box-sizing: inherit;
- }  */
+ }  
 
 
 
@@ -147,6 +147,10 @@ nav > .search__cart > .cart{
     height: 35px;
 }
 
+nav > .search__cart{
+    margin-right: 20px;
+}
+
 /* BANNER */
 #banner{
     margin-top: 70px;
@@ -280,8 +284,8 @@ footer > .logo {
     padding: 10px;
     justify-items: center;
     justify-content: center;
-    gap:20px;
-    margin: 10px;
+    gap: 20px;
+    margin: 1rem;
 }
 
 /* PRODUCT CARDS */
@@ -289,10 +293,10 @@ footer > .logo {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    width: 25vw;
+    width: 20vw;
     text-align: center;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 2rem;
 }
 
 .product-card:hover{
@@ -301,7 +305,7 @@ footer > .logo {
 }
 
 .product-card > * {
-    padding: 20px;
+    padding: 10px;
 }
 
 .product-card > * + *{
@@ -309,9 +313,20 @@ footer > .logo {
 }
 
 .grid-container > .product-card > img{
-    height: 190px;
+    height: 180px;
     width: 140px;
 }
+
+.grid-container > .product-card > a {
+    margin: 0;
+    text-decoration: none;
+}
+
+
+
+
+
+
 
 /* BROWSING FILTER */
 .filter{
@@ -473,9 +488,7 @@ footer > .logo {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 2rem;
-    margin-top: 0rem;
-    margin-bottom: 0rem;
+    width: 97vw;
 }
 
 .cart-content > *{
@@ -493,14 +506,10 @@ footer > .logo {
 
 .subtotal{
     display: flex;
-    justify-content: space-between;
-}
-
-.subtotal{
-    display: flex;
-    justify-content: space-between;
-    margin-right: 2rem;
-    margin-left: 6rem;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90vw;
 }
 
 .subtotal-price{
@@ -625,6 +634,16 @@ footer > .logo {
 
 
 /************** MEDIA QUERIES *************/
+/* NAV */
+
+/* NAV BAR */
+nav {
+    padding-left: 20px;
+    padding-right: 25px;
+}
+
+
+/* HOME */
 @media screen and (max-width: 650px) {
     #background__brass_drums{
         height: 80vh;
@@ -707,34 +726,32 @@ footer > .logo {
     }
 
 
-
-
     #shop-guitars{
         left: 30px;
         top: 750px;
         text-align: center;
-        width: 11rem;
+        width: 15rem;
     }
     
     #shop-keyboards{
         right: 30px;
-        top: 1100px;
+        top: 1200px;
         text-align: center;
-        width: 13rem;
+        width: 17rem;
     }
     
     #shop-brass{
         left: 30px;
-        top: 1500px;
+        top: 1550px;
         text-align: center;
-        width: 10rem;
+        width: 15rem;
     }
     
     #shop-drums{
         right: 30px;
-        top: 1850px;
+        top: 1900px;
         text-align: center;
-        width: 10rem; 
+        width: 15rem; 
     }
     
     nav > a > .logo {
@@ -763,119 +780,8 @@ footer > .logo {
         margin-left: 20px;
         width: 20px;
         height: 17px;
-
-
 }
 
-
-
-
-
-
-
-
-
-/* HOME PAGE - SMALL 
-@media screen and (max-width: 1200px) and (max-width: 600px) {
-    #background__brass_drums{
-        height: 100vh;
-        flex-direction: column;
-    }
-
-    #background__brass {
-        width: 100vw;
-        display: flex;
-        background-size: contain;
-    }
-
-    #background__drums {
-        width: 100vw;
-        background-size: contain;
-    }
-
-    #background__piano{
-        height:50vh;
-    }
-
-    #background__guitar{
-        width: 100vw;
-        background-size: contain;
-        margin-top: 20rem;
-        height: 50vh;
-    }
-
-    
-    .welcome__message > .MUSIC {
-        font-size:25vw;
-    }
-    
-    .swop-shop{
-        display: flex;
-        flex-direction: row;
-    }
-
-    .swop-shop >*{
-        font-size: 15vw;
-        padding-left: 0.2rem;
-    }
-
-    .welcome__message{
-        position: absolute;
-        left: 20px;
-        top: 150px;;
-        padding-left: 2rem;
-
-    }
-
-    .second-welcome{
-        display: flex;
-        justify-content: center;
-    }
-
-    
-
-}
-
-
-
-
-
-
-
-
-/* HOME PAGE - MID
-@media screen and (max-width: 1200px) and (min-width: 600px) {
-    .welcome__message > .MUSIC {
-        font-size:15vw;
-    }
-    .welcome__message > .SWOP {
-        font-size: 12vw;
-    }
-    .welcome__message > .SHOP {
-        font-size: 12vw;
-    }
-    .welcome__message > *{
-        padding-bottom: 1rem;
-    }
-   
-    #background__brass_drums{
-        height: 150vh;
-        flex-direction: column;
-    }
-   
-    #background__brass {
-        width: 100vw;
-        display: flex;
-        background-size: contain;
-    }
-
-    #background__drums {
-        width: 100vw;
-        background-size: cover;
-        position: sticky;
-        right: 0px;
-    }
-} */
 
 
 /* BROWSING */
@@ -885,10 +791,22 @@ footer > .logo {
         grid-template-columns: 1fr 1fr;
     }
     .product-card{
-        width: 50vw;
+        width:30vw;
+    }
+    .grid-container > .product-card > img{
+        height: 10rem;
+        width: 8rem;
     }
     
+    .filter{
+        margin-left: auto;
+        margin-right: auto;
+        width: 80vw;
+    }
 }
+
+
+
 
 
 /* PRODUCT */
@@ -914,83 +832,127 @@ footer > .logo {
 }
 
 
+/* CHECKOUT */
+@media screen and (max-width: 1000px) {
+    .cart-content{
+        width: 90vw;
+    }
 
+    .cart-content > .counter > svg{
+        display: none;
+    }
 
+    .cart-content > *{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 
+    .cart-content > .cart-name > p {
+        width: 40vw;
+    }
 
+    .checkout-title{
+        padding: 2rem;
+        padding-left: 0rem;
+        width: 50vw;
+        text-align: center;
+    }
 
+    .cart-title{
+        padding-left: 2rem;
+        padding-bottom: 2rem;
+    }
 
-/*  
-    #background__container{
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        flex: 1 1 auto;
+    .cart-image > img{
+        width: 15vw;
+    }
+
+    form{
+        width: 20vw;
+        margin-left: 0rem;
+        margin-right: auto;
+        padding: 0;
+    }
+
+    .express-checkout{
+        width: 60vw;
+        margin-left: -1rem;
+    }
+
+    .express-checkout > img{
+        width: 40vw;
+        margin: 0rem;
+        margin-left: 5rem;
+        margin-top: 3rem;
+        padding: 0;
+    }
+
+    .express-checkout > p {
+        padding: 0rem;
+        width: 50vw;
+        margin-left: 5rem;
+        margin-top: 2rem;
     }
     
+    .checkout{
+        width: 50vw;
+        margin-left: 4rem;
+    }
+    
+    .checkout-btn{
+        width: 50vw;
+    }
 
-    
-    #background__guitar{
-        width: auto;
-        height: 100vh;
-        background-image: url("../../ASSETS/guitar_background.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    
-    #background__piano{
-        width: auto;
-        height: 100vh;
-        background-image: url("../../ASSETS/piano.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    
-    #background__brass_drums{
-        width: 100vw;
-        height: 500px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-    }
-    
-    #background__brass{
-        width: 100vw;
-        height: 500px;
-        background-image: url("../../ASSETS/trumpet.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    
-    #background__drums{
-        width: 100vw;
-        height: 500px;
+    .checkout-area{
+        width: 60vw;
         margin-left: auto;
-        background-image: url("../../ASSETS/drums.png");
-        background-repeat: no-repeat;
-        background-size: cover;
+        margin-right: auto;
     }
-    
-    #shop-brass{
-        position: absolute;
-        left: 150px;
-        top: 2200px;
-        padding: 1rem 2rem;
-        border-radius: 2rem;
-        font-size: 1.5rem;
+
+    .subtotal{
+        width: 80vw;
+    } 
+
+    .form > p {
+        padding: 1rem;
+        padding-top: 2rem;
+        padding-bottom: 0rem;
+        width: 10rem;
     }
-    
-    #shop-drums{
-        position: absolute;
-        right: 150px;
-        top: 2200px;
-        padding: 1rem 2rem;
-        border-radius: 2rem;
-        font-size: 1.5rem;
-    }
-    
 }
+
+
+/* CONFIRMATION */
+@media screen and (max-width: 1000px) {
+    .confirmation > h3{
+        text-align: center;
+    }
+}   
+
+
+/* CART */
+@media screen and (max-width: 1000px) {
+    .cart-slide-container > .product-card > svg{
+        display: none;
+    }
+}   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1011,7 +973,4 @@ footer > .logo {
 
 
 /* TO SUBMIT: */
-/* CHANGE VISIBILITY - PUBLIC - SETTINGS - PAGES - MAIN - REFRESH <3*/
-
-
-      
+/* CHANGE VISIBILITY - PUBLIC - SETTINGS - PAGES - MAIN - REFRESH <3
