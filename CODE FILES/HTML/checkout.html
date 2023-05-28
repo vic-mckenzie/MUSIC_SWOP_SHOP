@@ -26,12 +26,12 @@
 
 <!-- NAV BAR -->
 <nav>
-    <img src="../../ASSETS/menu-burger.png" alt="menu-burger" class="burger" id="menuBtn" onclick="menuFunction()">
-    <img src="../../ASSETS/logo.png" alt="logo" class="logo">
-    <div class="search__cart">
-        <img src="../../ASSETS/search.png" alt="search" class="search" id="searchBtn" onclick="searchFunction()">
-        <img src="../../ASSETS/cart.png" alt="cart" class="cart" id="cartBtn" onclick="cartFunction()">
-    </div>
+  <img src="../../ASSETS/menu-burger.png" alt="menu-burger" class="burger" id="menuBtn" onclick="menuFunction()">
+  <a href="../HTML/index.html"><img src="../../ASSETS/logo.png" alt="logo" class="logo"></a>
+  <div class="search__cart">
+      <img src="../../ASSETS/search.png" alt="search" class="search" id="searchBtn" onclick="searchFunction()">
+      <img src="../../ASSETS/cart.png" alt="cart" class="cart" id="cartBtn" onclick="cartFunction()">
+  </div>
 </nav>
 
   
@@ -111,37 +111,27 @@
 
     <div class="form">
         <p>CHECKOUT AS GUEST</p>
-            <form action="after.html" onsubmit="return validateForm()"> 
+        <form action="after.html" onsubmit="return validateForm()"> 
+          <label for="name">your name:</label>
+          <input type="text" id="name" name="name" required minlength="2" pattern="[a-z|A-Z| |-]*" placeholder="e.g. Firstname Lastname"/>
 
-        <!-- can add placeholders if needed -->
-        <!-- can make paragraphs bc p is block behaviour -->
-        
-        <label for="name">your name:</label>
-        <input type="text" id="name" name="name" required minlength="2" pattern="[a-z|A-Z| |-]*" placeholder="e.g. Firstname Lastname"/>
+          <label for="phone">your phone:</label>
+          <input type="tel" id="phone" name="phone" pattern="(\(|\)|-|[0-9]| )*" 
+                  oninvalid="this.setCustomValidity('Please enter only digits, brackets, hypens')" placeholder="e.g. 0400 000 000"/>
 
-        <label for="phone">your phone:</label>
-        <input type="tel" id="phone" name="phone" pattern="(\(|\)|-|[0-9]| )*" 
-                oninvalid="this.setCustomValidity('Please enter only digits, brackets, hypens')" placeholder="e.g. 0400 000 000"/>
+          <label for="email">your email:</label>
+          <input type="email" id="email" name="email" required 
+                  oninvalid="this.setCustomValidity('Please enter valid email')" placeholder="e.g. person@host.com.au"/>
 
-        <label for="email">your email:</label>
-        <input type="email" id="email" name="email" required 
-                oninvalid="this.setCustomValidity('Please enter valid email')" placeholder="e.g. person@host.com.au"/>
+          <label for="Address">Address:</label>
+          <input type="text" id="name" name="name" required minlength="2" pattern="[a-z|A-Z| |-]*" 
+                  oninvalid="this.setCustomValidity('Please enter valid address')" placeholder="e.g. 1 Street Name, City"/>
 
-        <label for="Address">Address:</label>
-        <input type="text" id="name" name="name" required minlength="2" pattern="[a-z|A-Z| |-]*" 
-                oninvalid="this.setCustomValidity('Please enter valid address')" placeholder="e.g. 1 Street Name, City"/>
-
-        <!-- <label for="state">STATE:</label>
-        <input type="text" id="name" name="name" required minlength="3" maxlength="3" pattern="[a-z|A-Z| |-]*"
-                oninvalid="this.setCustomValidity('Please enter state in three letters e.g. VIC/SYD/QLD')" placeholder="e.g. VIC/SYD/QLD etc."/> -->
-
-        <label for="name">POST CODE:</label>
-        <input type="number" id="post-code" name="post-code" required minlength="3" maxlength="4" pattern="[0-9]*" 
-                oninvalid="this.setCustomValidity('Please enter post code in 4 numbers only')" placeholder="e.g. 0000"/>
-    </form>
-
+          <label for="name">POST CODE:</label>
+          <input type="number" id="post-code" name="post-code" required minlength="3" maxlength="4" pattern="[0-9]*" 
+                  oninvalid="this.setCustomValidity('Please enter post code in 4 numbers only')" placeholder="e.g. 0000"/>
+          </form>
     </div>
-
 </div>
 
 <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="1" viewBox="0 0 1473 1" id="long-line">
@@ -149,7 +139,7 @@
 </svg> 
 
 <div class="checkout-area">
-    <button type="submit" class="btn btn-primary checkout-btn">CHECKOUT</button>
+    <a href="../HTML/confirmation.html" class="btn btn-primary checkout-btn">CHECKOUT</a>
 </div>
 
 
@@ -230,7 +220,7 @@
         <div class="menu-container">
           <button class="accordion">GUITARS</button>
           <div class="accordion-content">
-            <a href="#">Electric Guitars</a>
+            <a href="../HTML/browsing.html">Electric Guitars</a>
             <a href="#">Acoustic Guitars</a>
             <a href="#">12 String Electric</a>
             <a href="#">12 String Acoustic</a>

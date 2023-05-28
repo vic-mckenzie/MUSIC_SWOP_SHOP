@@ -25,12 +25,12 @@
 
 <!-- NAV BAR -->
 <nav>
-    <img src="../../ASSETS/menu-burger.png" alt="menu-burger" class="burger" id="menuBtn" onclick="menuFunction()">
-    <img src="../../ASSETS/logo.png" alt="logo" class="logo">
-    <div class="search__cart">
-        <img src="../../ASSETS/search.png" alt="search" class="search" id="searchBtn" onclick="searchFunction()">
-        <img src="../../ASSETS/cart.png" alt="cart" class="cart" id="cartBtn" onclick="cartFunction()">
-    </div>
+  <img src="../../ASSETS/menu-burger.png" alt="menu-burger" class="burger" id="menuBtn" onclick="menuFunction()">
+  <a href="../HTML/index.html"><img src="../../ASSETS/logo.png" alt="logo" class="logo"></a>
+  <div class="search__cart">
+      <img src="../../ASSETS/search.png" alt="search" class="search" id="searchBtn" onclick="searchFunction()">
+      <img src="../../ASSETS/cart.png" alt="cart" class="cart" id="cartBtn" onclick="cartFunction()">
+  </div>
 </nav>
   
 
@@ -47,7 +47,7 @@
 </div>
 
 <div class="back-button">
-    <button><i class="fa-solid fa-caret-left" style="color: #ffffff;"></i></button>
+    <a href="../HTML/browsing.html"><i class="fa-solid fa-caret-left" style="color: #ffffff;"></i></a>
 </div>
 
 <!-- PRODUCT CONTENT -->
@@ -107,7 +107,7 @@
             </g>
         </svg>
           
-        <button class="btn btn-primary add-to-cart">ADD TO CART</button>
+        <button class="btn btn-primary add-to-cart" id="addCartBtn" onclick="addCartFunction()">ADD TO CART</button>
     
     </div>
 </div>
@@ -204,7 +204,7 @@
               <p>$690</p>
         </div>
         <div class="checkout-area">
-            <button type="submit" class="btn btn-primary checkout-btn">CHECKOUT</button>
+            <a href="../HTML/checkout.html" class="btn btn-primary checkout-btn">CHECKOUT</a>
         </div>
       </div>
     </div>
@@ -222,7 +222,7 @@
         <div class="menu-container">
           <button class="accordion">GUITARS</button>
           <div class="accordion-content">
-            <a href="#">Electric Guitars</a>
+            <a href="../HTML/browsing.html">Electric Guitars</a>
             <a href="#">Acoustic Guitars</a>
             <a href="#">12 String Electric</a>
             <a href="#">12 String Acoustic</a>
