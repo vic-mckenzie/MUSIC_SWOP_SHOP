@@ -176,12 +176,10 @@ footer > .logo {
 
 
 
-
-/* ************** HOME PAGE ************** */
+/* ******** HOME PAGE ********* */
 /* WELCOME MESSAGE */
 .welcome__message{
     position: absolute;
-    left: 50px;
     top: 170px;;
     padding-left: 3rem;
     padding-top: 1.5rem;
@@ -191,14 +189,14 @@ footer > .logo {
     font-size: 13rem;
 }
 
-.welcome__message > .SWOP {
+.welcome__message > .swop-shop > .SWOP {
     position: relative;
     top: -30px;
 }
 
-.welcome__message > .SHOP {
+.welcome__message > .swop-shop > .SHOP {
     position: relative;
-    top: -50px;
+    top: -30px;
 }
 
 .welcome__message > .second-welcome{
@@ -268,6 +266,9 @@ footer > .logo {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
+
 
 
 
@@ -624,6 +625,224 @@ footer > .logo {
 
 
 /************** MEDIA QUERIES *************/
+@media screen and (max-width: 650px) {
+    #background__brass_drums{
+        height: 80vh;
+        flex-direction: column;
+        margin-top: 5rem;
+    }
+
+    #background__brass{
+        background-size: contain;
+    }
+
+    #background__guitar{
+        margin-top: 18rem;
+        background-size: cover ;
+        height: 20rem;
+        position: relative;
+        right: 100px;
+    }
+
+    #background__piano{
+        background-size: cover;
+        height: 50vh;
+        width: 100vw;
+    }
+    
+    .swop-shop{
+        display: flex;
+        justify-content: center;
+        margin-top:1rem;
+    }
+
+    .welcome__message{
+        display: flex;
+        width: 80vw;
+        top: 170px;
+        align-items: center;
+        padding:0rem;
+    }
+
+    .welcome__message > *{
+        text-align: center;
+    }
+
+    .welcome__message > .MUSIC {
+        font-size: 20vw;
+    }
+
+    .welcome__message > .swop-shop > .SWOP {
+        font-size: 10vw;
+        padding-right: 1rem;
+    }
+    
+    .welcome__message > .swop-shop > .SHOP {
+        font-size: 10vw;
+        padding-left: 1rem;
+    }
+
+    .welcome__message > .second-welcome{
+        margin-top: 3rem;
+    }
+
+    .sidebar-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .second-welcome{
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .welcome__message > .second-welcome{
+        left: 0px;
+    }
+
+
+
+
+    #shop-guitars{
+        right: 115px;
+        top: 750px;
+    }
+    
+    #shop-keyboards{
+        right: 70px;
+        top: 1000px;
+    }
+    
+    #shop-brass{
+        left: 110px;
+        top: 1375px;
+    }
+    
+    #shop-drums{
+        right: 100px;
+        top: 1650px;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* HOME PAGE - SMALL 
+@media screen and (max-width: 1200px) and (max-width: 600px) {
+    #background__brass_drums{
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    #background__brass {
+        width: 100vw;
+        display: flex;
+        background-size: contain;
+    }
+
+    #background__drums {
+        width: 100vw;
+        background-size: contain;
+    }
+
+    #background__piano{
+        height:50vh;
+    }
+
+    #background__guitar{
+        width: 100vw;
+        background-size: contain;
+        margin-top: 20rem;
+        height: 50vh;
+    }
+
+    
+    .welcome__message > .MUSIC {
+        font-size:25vw;
+    }
+    
+    .swop-shop{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .swop-shop >*{
+        font-size: 15vw;
+        padding-left: 0.2rem;
+    }
+
+    .welcome__message{
+        position: absolute;
+        left: 20px;
+        top: 150px;;
+        padding-left: 2rem;
+
+    }
+
+    .second-welcome{
+        display: flex;
+        justify-content: center;
+    }
+
+    
+
+}
+
+
+
+
+
+
+
+
+/* HOME PAGE - MID
+@media screen and (max-width: 1200px) and (min-width: 600px) {
+    .welcome__message > .MUSIC {
+        font-size:15vw;
+    }
+    .welcome__message > .SWOP {
+        font-size: 12vw;
+    }
+    .welcome__message > .SHOP {
+        font-size: 12vw;
+    }
+    .welcome__message > *{
+        padding-bottom: 1rem;
+    }
+   
+    #background__brass_drums{
+        height: 150vh;
+        flex-direction: column;
+    }
+   
+    #background__brass {
+        width: 100vw;
+        display: flex;
+        background-size: contain;
+    }
+
+    #background__drums {
+        width: 100vw;
+        background-size: cover;
+        position: sticky;
+        right: 0px;
+    }
+} */
+
+
+/* BROWSING */
 @media screen and (max-width: 1000px) {
     .grid-container{
         width: auto;
@@ -635,6 +854,8 @@ footer > .logo {
     
 }
 
+
+/* PRODUCT */
 @media screen and (max-width: 1000px) {
     .product-content{
         flex-direction: column;
@@ -654,8 +875,87 @@ footer > .logo {
         height: 110px;
         width: 90px;
     }
-
 }
+
+
+
+
+
+
+
+
+/*  
+    #background__container{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        flex: 1 1 auto;
+    }
+    
+
+    
+    #background__guitar{
+        width: auto;
+        height: 100vh;
+        background-image: url("../../ASSETS/guitar_background.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    #background__piano{
+        width: auto;
+        height: 100vh;
+        background-image: url("../../ASSETS/piano.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    #background__brass_drums{
+        width: 100vw;
+        height: 500px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    
+    #background__brass{
+        width: 100vw;
+        height: 500px;
+        background-image: url("../../ASSETS/trumpet.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    #background__drums{
+        width: 100vw;
+        height: 500px;
+        margin-left: auto;
+        background-image: url("../../ASSETS/drums.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    #shop-brass{
+        position: absolute;
+        left: 150px;
+        top: 2200px;
+        padding: 1rem 2rem;
+        border-radius: 2rem;
+        font-size: 1.5rem;
+    }
+    
+    #shop-drums{
+        position: absolute;
+        right: 150px;
+        top: 2200px;
+        padding: 1rem 2rem;
+        border-radius: 2rem;
+        font-size: 1.5rem;
+    }
+    
+}
+
 
 
 
