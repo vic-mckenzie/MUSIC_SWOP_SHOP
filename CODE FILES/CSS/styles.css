@@ -196,7 +196,7 @@ footer > .logo {
 
 .welcome__message > .swop-shop > .SHOP {
     position: relative;
-    top: -30px;
+    top: -50px;
 }
 
 .welcome__message > .second-welcome{
@@ -634,14 +634,15 @@ footer > .logo {
 
     #background__brass{
         background-size: contain;
+        margin-bottom: 10rem;
     }
 
     #background__guitar{
-        margin-top: 18rem;
+        margin-top: 19rem;
         background-size: cover ;
         height: 20rem;
         position: relative;
-        right: 100px;
+        right: 20px;
     }
 
     #background__piano{
@@ -680,6 +681,7 @@ footer > .logo {
     .welcome__message > .swop-shop > .SHOP {
         font-size: 10vw;
         padding-left: 1rem;
+        top:-30px;
     }
 
     .welcome__message > .second-welcome{
@@ -708,25 +710,59 @@ footer > .logo {
 
 
     #shop-guitars{
-        right: 115px;
+        left: 30px;
         top: 750px;
+        text-align: center;
+        width: 11rem;
     }
     
     #shop-keyboards{
-        right: 70px;
-        top: 1000px;
+        right: 30px;
+        top: 1100px;
+        text-align: center;
+        width: 13rem;
     }
     
     #shop-brass{
-        left: 110px;
-        top: 1375px;
+        left: 30px;
+        top: 1500px;
+        text-align: center;
+        width: 10rem;
     }
     
     #shop-drums{
-        right: 100px;
-        top: 1650px;
+        right: 30px;
+        top: 1850px;
+        text-align: center;
+        width: 10rem; 
     }
-
+    
+    nav > a > .logo {
+        width: 100px;
+        justify-content: space-around;
+    }
+    
+    nav > div {
+        display: flex;
+        width: 70px;
+        padding-right: 10px;
+    }
+    
+    nav > .burger{
+        margin-left: 1.5rem;
+        width: 20px;
+        height:17px;
+    }
+    
+    nav > .search__cart > .search{
+        width: 20px;
+        height: 17px;
+    }
+    
+    nav > .search__cart > .cart{
+        margin-left: 20px;
+        width: 20px;
+        height: 17px;
 
 
 }
