@@ -49,7 +49,7 @@
 <!-- PRODUCT CONTENT -->
 <div class="product-content">
     <div class="product-photo-container">
-        <img src="../../ASSETS/guitar-closeup.png">
+        <img src="../../ASSETS/guitar-closeup.png" id="product-guitar-image">
     </div>
 
 
@@ -63,9 +63,9 @@
 
         <p class="product-titles">PHOTO VIEW:</p>
         <div class="photo-view">
-            <p>FRONT</p>
-            <p>FULL</p>
-            <p>BACK</p>
+            <button class="btn btn-primary" onclick="changeImageFront()">FRONT</button>
+            <button class="btn btn-primary" onclick="changeImageFull()">FULL</button>
+            <button class="btn btn-primary" onclick="changeImageBack()">BACK</button>
         </div>
 
         <hr>

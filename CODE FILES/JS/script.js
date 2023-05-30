@@ -131,3 +131,21 @@ for (var i = 0; i < accordions.length; i++) {
     }
   }
 }
+
+
+// PRODUCT PAGE VIEW
+function changeImageFront(){
+  var img = document.getElementById('product-guitar-image');
+  img.setAttribute('src','../../ASSETS/guitar-closeup.png'); 
+}
+
+function changeImageFull(){
+  var img = document.getElementById('product-guitar-image');
+  img.src = "../../ASSETS/guitar-full-black.png";
+}
+
+function changeImageBack(){
+  var img = document.getElementById('product-guitar-image');
+  img.src = "../../ASSETS/guitar-full-back-black.png";
+}
+
