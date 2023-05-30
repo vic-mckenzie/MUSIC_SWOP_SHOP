@@ -97,9 +97,14 @@
     justify-content: center;
 }
 
+.product-card>svg{
+  padding: 0;
+}
+
 .modal-subtotal{
   margin: 0rem;
   margin-top: 2rem;
+  width: auto;
 }
 
 a.checkout-btn{

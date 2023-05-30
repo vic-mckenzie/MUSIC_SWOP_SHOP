@@ -468,7 +468,9 @@ footer > .logo {
 
 .back-button{
     width: 100vw;
-    justify-content: center;
+    position: relative;
+    right: 2rem;
+    margin-top: 1rem;
 }
 
 .back-button > a > i{
@@ -500,6 +502,11 @@ footer > .logo {
     padding: 2rem;
 }
 
+.cart-title{
+    padding: 2rem;
+}
+
+
 .cart-image > img{
     width: 15vw;
 }
@@ -510,6 +517,11 @@ footer > .logo {
     margin-left: auto;
     margin-right: auto;
     width: 90vw;
+}
+
+.title-1{
+    height: 2rem;
+    margin-top: 1rem;
 }
 
 .subtotal-price{
@@ -583,6 +595,10 @@ footer > .logo {
     height: 80vh;
 }
 
+.confirmation >*{
+    margin:0rem;
+}
+
 .confirmation > .cart-content > .cart-image > img{
     width: 10vw;
 }
@@ -597,8 +613,13 @@ footer > .logo {
     margin-top: 3rem;
 }
 
+.confirmation > .cart-content >*{
+    padding: 0rem;
+}
+
 .confirmation > .cart-content{
-    margin: 2rem;
+    width: 50vw;
+    margin: 1rem;
 }
 
 .confirmation > h3{
@@ -927,6 +948,9 @@ nav {
     .confirmation > h3{
         text-align: center;
     }
+    .confirmation > .cart-content{
+        width: 70vw;
+    }
 }   
 
 
@@ -973,4 +997,4 @@ nav {
 
 
 /* TO SUBMIT: */
-/* CHANGE VISIBILITY - PUBLIC - SETTINGS - PAGES - MAIN - REFRESH <3
+/* CHANGE VISIBILITY - PUBLIC - SETTINGS - PAGES - MAIN - REFRESH <3 */
