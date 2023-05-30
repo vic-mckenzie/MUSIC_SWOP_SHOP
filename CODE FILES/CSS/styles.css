@@ -367,6 +367,10 @@ a.rise-shake {
     text-decoration: none;
 }
 
+.product-card > p {
+    margin-top: auto;
+}
+
 /* BROWSING FILTER */
 .filter{
     height:70px;
