@@ -1,6 +1,9 @@
-:root{
-
-}
+@import "../CSS/colours.css";
+@import "../CSS/forms.css";
+@import "../CSS/modals.css";
+@import "../CSS/reset.css";
+@import "../CSS/styles.css";
+@import "../CSS/typography.css";
 
 html{ 
     box-sizing: border-box;
@@ -11,8 +14,6 @@ html{
 *:after {
     box-sizing: inherit;
  }  
-
-
 
 /* MODULAR CODE */
 .stack{
@@ -31,80 +32,7 @@ html{
 }
 */    
 
-/* BUTTONS GENERAL*/
-.btn {
-    text-decoration: none;
-    padding: 0.75rem 2rem;
-    border-radius: 2rem;
-    font-size: 0.9rem;
-    font-family: Menlo;
-}
-
-.btn-primary {
-    color: white;
-    background-color: rgba(116, 116, 116, 0.5);
-}
-
-.btn-primary--hover {
-    background-color: #0c62e4;
-    transform:translateY(-1px)
-}
-
-.btn-primary--active {
-    background-color: #0050c8;
-    transform:none
-}
-
-.btn-primary--focus {
-    background-color: #0f6fff;
-    color: #fff;
-    box-shadow:inset 0 0 0 1px #fff, 0 0 0 3px rgba(15, 111, 255, .1), 0 0 0 1px #0f6fff
-}
-
-
-
-
-/* BUTTONS SPECIFIC */
-#shop-guitars{
-    position: absolute;
-    right: 150px;
-    top: 700px;
-    padding: 1rem 2rem;
-    border-radius: 2rem;
-    font-size: 1.5rem;
-}
-
-#shop-keyboards{
-    position: absolute;
-    right: 135px;
-    top: 1600px;
-    padding: 1rem 2rem;
-    border-radius: 2rem;
-    font-size: 1.5rem;
-}
-
-#shop-brass{
-    position: absolute;
-    left: 150px;
-    top: 2200px;
-    padding: 1rem 2rem;
-    border-radius: 2rem;
-    font-size: 1.5rem;
-}
-
-#shop-drums{
-    position: absolute;
-    right: 150px;
-    top: 2200px;
-    padding: 1rem 2rem;
-    border-radius: 2rem;
-    font-size: 1.5rem;
-}
-
-
-
 /* ************ TEMPLATE COMPONENTS ********** */
-
 /* NAV BAR */
 nav {
     height:150px;
@@ -175,6 +103,46 @@ footer > .logo {
 }
 
 
+/* ************ BUTTONS *************/
+.btn {
+    text-decoration: none;
+    padding: 0.75rem 2rem;
+    border-radius: 2rem;
+    font-size: 0.9rem;
+    font-family: Menlo;
+}
+
+.btn-primary {
+    color: var(--color-text);
+    background-color: var(--color-button);      
+}
+
+.btn-primary:hover {
+    background-color: var(--color-button-hover);
+    transform:translateY(-2px);
+}
+
+.btn-primary:active {
+    background-color: var(--color-secondary);
+    transform:none;
+}
+
+.btn-secondary{
+    background-color: var(--color-secondary);
+}
+
+
+/* ******** LINES ******* */
+div > hr {
+    width: 40vw;
+}
+
+.inside-line > hr{
+    width: 80vw;
+    justify-content: right;
+    border: none;
+    border-top: 1px solid var(--color-secondary);
+}
 
 
 
@@ -271,6 +239,45 @@ footer > .logo {
     background-size: cover;
 }
 
+/* SHOP BUTTONS */
+#shop-guitars{
+    position: absolute;
+    right: 150px;
+    top: 700px;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+}
+
+#shop-keyboards{
+    position: absolute;
+    right: 135px;
+    top: 1600px;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+}
+
+#shop-brass{
+    position: absolute;
+    left: 150px;
+    top: 2200px;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+}
+
+#shop-drums{
+    position: absolute;
+    right: 150px;
+    top: 2200px;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+}
+
+
+
 
 
 
@@ -322,12 +329,6 @@ footer > .logo {
     text-decoration: none;
 }
 
-
-
-
-
-
-
 /* BROWSING FILTER */
 .filter{
     height:70px;
@@ -353,7 +354,7 @@ footer > .logo {
 }
 
 
-/* BROWSING TITLE */
+/* BROWSING TITLES */
 .title-1{
     display: flex;
     height: 70px;

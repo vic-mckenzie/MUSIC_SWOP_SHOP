@@ -1,21 +1,28 @@
+@import "../CSS/colours.css";
+@import "../CSS/forms.css";
+@import "../CSS/modals.css";
+@import "../CSS/reset.css";
+@import "../CSS/styles.css";
+@import "../CSS/typography.css";
 
-/* The Modal (background) */
-/* make modal class */
+
+
+/* MODAL - BACKGROUND */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 0px; /* Location of the box */
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 0px; 
   left: 200;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0, 0, 0, 0.756); /* Black w/ opacity */
 }
 
-/* Modal Content */
+/* MODAL - CONTENT */
 .modal-content {
   position: relative;
   background-color: #363636e0;
@@ -30,7 +37,7 @@
 }
 
 
-/* Add Animation */
+/* MODAL ANIMATION */
 @-webkit-keyframes animatetop {
   from {top:-300px; opacity:0} 
   to {top:0; opacity:1}
@@ -41,9 +48,9 @@
   to {top:0; opacity:1}
 }
 
-/* The Close Button */
+/* MODAL CLOSE*/
 .cartClose {
-  color: white;
+  color: var(--color-text);
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -51,13 +58,13 @@
 
 .cartClose:hover,
 .cartClose:focus {
-  color: #000;
+  color: var(--color-primary);
   text-decoration: none;
   cursor: pointer;
 }
 
 .menuClose {
-  color: white;
+  color: var(--color-text);
   position: fixed;
   left: 250px;
   font-size: 28px;
@@ -66,15 +73,16 @@
 
 .menuClose:hover,
 .menuClose:focus {
-  color: #000;
+  color: var(--color-primary);
   text-decoration: none;
   cursor: pointer;
 }
 
 
+/* MODAL OTHER */
 .modal-header {
   padding: 50px 30px;
-  color: white;
+  color: var(--color-text);
 }
 
 .modal-body {padding: 2px 16px;}
@@ -83,6 +91,9 @@
   padding: 2px 16px;
   color: rgb(86, 86, 86);
 }
+
+
+
 
 
 
@@ -110,6 +121,8 @@
 a.checkout-btn{
   text-align:center;
 }
+
+
 
 
 /* MENU */
@@ -157,7 +170,7 @@ button.accordion.is-open:after {
 }
 
 button.accordion:hover, button.accordion.is-open {
-  color: rgb(255, 255, 255);
+  color: var(--color-text);
 }
 
 .accordion-content {
@@ -169,7 +182,7 @@ button.accordion:hover, button.accordion.is-open {
 }
 
 .accordion-content > a{
-  color: rgb(255, 255, 255);
+  color: var(--color-text);
   display: block;
   padding: 8px;
   text-decoration: none;
@@ -177,8 +190,10 @@ button.accordion:hover, button.accordion.is-open {
 }
 
 .accordion-content > a:hover{
-  color: rgb(201, 74, 0);
+  color: var(--color-secondary);
 }
+
+
 
 
 /* SEARCH */
@@ -201,7 +216,7 @@ button.accordion:hover, button.accordion.is-open {
   width: 50vw;
   margin-top: 0.3rem;
   margin-right: 0.5rem;
-  border-color: #C64C00;
+  border-color: var(--color-secondary);
   font-family: Menlo;
   font-size: large;
   padding-left: 2rem;

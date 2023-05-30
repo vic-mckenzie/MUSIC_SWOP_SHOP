@@ -1,16 +1,18 @@
+@import "../CSS/colours.css";
+@import "../CSS/forms.css";
+@import "../CSS/modals.css";
+@import "../CSS/reset.css";
+@import "../CSS/styles.css";
+@import "../CSS/typography.css";
+
+
 :root{
-    --color-primary: black;
-    --color-secondary: blue;
-
+    --color-primary: rgb(0, 0, 0);
+    --color-secondary: rgb(150, 52, 0);
     --color-text: #FFFFFF;
-    --color-border:  
-
-    --color-success:
-    --color-error:
-    --color-warning:
-
-    --color-gradient: linear-gradient(to bottom, #C64C00, #421901, black);
-
+    --color-border: rgb(216, 54, 0);
+    --color-button: rgba(116, 116, 116, 0.5);
+    --color-button-hover: #acacac;
 }
 
 
@@ -19,13 +21,11 @@ body {
     color: var(--color-text);
 }
 
-h2{
-    color: var(--color-secondary);
+a:hover{
+    color:var(--color-primary);
 }
 
-h3{
-    color:var(--color-text);
-}
+
 
 nav{
     background: linear-gradient(to bottom, #C64C00, #421901, black);

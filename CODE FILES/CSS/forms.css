@@ -1,3 +1,10 @@
+@import "../CSS/colours.css";
+@import "../CSS/forms.css";
+@import "../CSS/modals.css";
+@import "../CSS/reset.css";
+@import "../CSS/styles.css";
+@import "../CSS/typography.css";
+
 form{
     width: 40vw;
     background-color: black;

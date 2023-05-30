@@ -1,7 +1,10 @@
-body {
-    font-family: Arial, Helvetica, sans-serif
+@import "../CSS/colours.css";
+@import "../CSS/forms.css";
+@import "../CSS/modals.css";
+@import "../CSS/reset.css";
+@import "../CSS/styles.css";
+@import "../CSS/typography.css";
 
-}
 
 @font-face {
     font-family: Blackletter97;
@@ -14,28 +17,30 @@ body {
 }
 
 :root{
-    font-small: 150px;
-}
+    --font-xs: 0.5rem;
+    --font-small: 1rem;
+    --font-medium: 1.2rem;
+    --font-large: 4rem;
+    --font-heading: 9.375rem;
 
+}
 
 h1{
     font-family: 'Blackletter97', sans-serif;
-    font-size: 150px;
+    font-size: var(--font-heading);
 }
 
 h3{
-    font-family: Menlo;
     text-transform:uppercase;
+    font-size: var(--font-medium);
 }
 
 p{
-    font-family: Menlo;
-    color: white;
+    color: var(--color-text);
 }
 
 body{
     font-family: Menlo;
-    color: white;
 }
 
 
