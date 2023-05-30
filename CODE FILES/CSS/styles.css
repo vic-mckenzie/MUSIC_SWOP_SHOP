@@ -7,6 +7,7 @@
 
 html{ 
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 *,
@@ -22,7 +23,7 @@ html{
     align-items: left;
 }
 
-/*
+
 .cluster {
     display: flex;
     flex-wrap: wrap;
@@ -30,7 +31,7 @@ html{
     align-items: center;
     flex-direction: row;
 }
-*/    
+ 
 
 /* ************ TEMPLATE COMPONENTS ********** */
 /* NAV BAR */
@@ -117,9 +118,10 @@ footer > .logo {
     background-color: var(--color-button);      
 }
 
-.btn-primary:hover {
+.btn:hover {
     background-color: var(--color-button-hover);
     transform:translateY(-2px);
+    color: var(--color-primary);
 }
 
 .btn-primary:active {
@@ -129,6 +131,11 @@ footer > .logo {
 
 .btn-secondary{
     background-color: var(--color-secondary);
+}
+
+.btn-secondary:active {
+    background-color: var(--color-primary);
+    transform:none;
 }
 
 
@@ -161,6 +168,7 @@ div > hr {
     font-size: 13rem;
 }
 
+
 .welcome__message > .swop-shop > .SWOP {
     position: relative;
     top: -30px;
@@ -170,6 +178,23 @@ div > hr {
     position: relative;
     top: -50px;
 }
+
+.welcome__message > .MUSIC:hover {
+    transform: scale(1.05);
+    transition: all 0.3 ease-in-out;
+}
+
+.welcome__message > .swop-shop > .SWOP:hover {
+    transform: scale(1.05);
+    transition: all 0.3 ease-in-out;
+}
+
+.welcome__message > .swop-shop > .SHOP:hover {
+    transform: scale(1.05);
+    transition: all 0.3 ease-in-out;
+}
+
+
 
 .welcome__message > .second-welcome{
     position: relative;
@@ -277,7 +302,19 @@ div > hr {
 }
 
 
+a.rise-shake {
+    animation: jump-shaking 1s 3s infinite;
+  }
 
+@keyframes jump-shaking {
+    0% { transform: translateX(0) }
+    25% { transform: translateY(-9px) }
+    35% { transform: translateY(-9px) rotate(4deg) }
+    55% { transform: translateY(-9px) rotate(0deg) }
+    65% { transform: translateY(-9px) rotate(4deg) }
+    75% { transform: translateY(-9px) rotate(0deg) }
+    100% { transform: translateY(0) rotate(0) }
+}
 
 
 
@@ -444,11 +481,12 @@ div > hr {
 }
 
 .add-to-cart{
-    background-color: rgb(125, 40, 0);
+    background-color: var(--color-secondary);
     border-radius: 0.5rem;
     margin-top: 0.5rem;
     margin-bottom: 2rem;
     width: auto;
+    border: none;
 }
 
 .product-card > img{
@@ -529,7 +567,6 @@ div > hr {
     padding: 2rem;
 }
 
-/* REFACTOR THIS */
 .form{
     display: flex;
     flex-direction: column;
@@ -571,7 +608,6 @@ div > hr {
     margin-top: 2rem;
 }
 
-/* REFACTOR? */
 .checkout-area{
     display: flex;
     justify-content: center;
@@ -656,15 +692,6 @@ div > hr {
 
 
 /************** MEDIA QUERIES *************/
-/* NAV */
-
-/* NAV BAR */
-nav {
-    padding-left: 20px;
-    padding-right: 25px;
-}
-
-
 /* HOME */
 @media screen and (max-width: 650px) {
     #background__brass_drums{
@@ -824,6 +851,10 @@ nav {
         margin-left: auto;
         margin-right: auto;
         width: 80vw;
+    }
+
+    .title-1 {
+        margin-bottom: 1rem;
     }
 }
 

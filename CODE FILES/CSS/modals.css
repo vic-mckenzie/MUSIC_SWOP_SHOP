@@ -30,23 +30,44 @@
   width: 20rem;
   height: 100vh;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-  -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
-  animation-name: animatetop;
   animation-duration: 0.4s
 }
 
 
 /* MODAL ANIMATION */
+@-webkit-keyframes animateright {
+  from {right:-300px; opacity:0} 
+  to {right:0; opacity:1}
+}
+
+@keyframes animateright {
+  from {right:-300px; opacity:0}
+  to {right:0; opacity:1}
+}
+
+
+@-webkit-keyframes animateleft {
+  from {left:-300px; opacity:0} 
+  to {left:0; opacity:1}
+}
+
+@keyframes animateleft {
+  from {left:-300px; opacity:0}
+  to {left:0; opacity:1}
+}
+
 @-webkit-keyframes animatetop {
   from {top:-300px; opacity:0} 
   to {top:0; opacity:1}
 }
 
-@keyframes animatetop {
+@keyframes animatetop{
   from {top:-300px; opacity:0}
   to {top:0; opacity:1}
 }
+
+
 
 /* MODAL CLOSE*/
 .cartClose {
@@ -100,6 +121,8 @@
 /* CART */
 .cart-modal-content{
   margin-left: auto;
+  -webkit-animation-name: animateright;
+  animation-name: animateright;
 }
 
 .cart-slide-container{
@@ -129,6 +152,8 @@ a.checkout-btn{
 .menu-modal-content{
   margin-right: auto;
   background: linear-gradient(to bottom, #C64C00, #421901, black);
+  -webkit-animation-name: animateleft;
+  animation-name: animateleft;
 }
 
 .modal-body > .logo{
@@ -208,6 +233,8 @@ button.accordion:hover, button.accordion.is-open {
   align-items: center;
   justify-content: space-around;
   padding: 1rem;
+  -webkit-animation-name: animatetop;
+  animation-name: animatetop;
 }
 
 .search-modal-content > input{
