@@ -1,19 +1,19 @@
-@import "../CSS/colours.css";
-@import "../CSS/forms.css";
-@import "../CSS/modals.css";
-@import "../CSS/reset.css";
-@import "../CSS/styles.css";
-@import "../CSS/typography.css";
+@import "colours.css";
+@import "forms.css";
+@import "modals.css";
+@import "reset.css";
+@import "styles.css";
+@import "typography.css";
 
 
 @font-face {
     font-family: Blackletter97;
-    src: url("../../ASSETS/blackletter_97/Blackletter97.ttf");
+    src: url("../ASSETS/blackletter_97/Blackletter97.ttf");
 }
 
 @font-face {
     font-family: Menlo;
-    src: url("../../ASSETS/menlo/Menlo-Regular.woff");
+    src: url("../ASSETS/menlo/Menlo-Regular.woff");
 }
 
 :root{

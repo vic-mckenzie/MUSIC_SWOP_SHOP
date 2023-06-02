@@ -1,9 +1,9 @@
-@import "../CSS/colours.css";
-@import "../CSS/forms.css";
-@import "../CSS/modals.css";
-@import "../CSS/reset.css";
-@import "../CSS/styles.css";
-@import "../CSS/typography.css";
+@import "colours.css";
+@import "forms.css";
+@import "modals.css";
+@import "reset.css";
+@import "styles.css";
+@import "typography.css";
 
 
 :root{

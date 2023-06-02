@@ -1,9 +1,9 @@
-@import "../CSS/colours.css";
-@import "../CSS/forms.css";
-@import "../CSS/modals.css";
-@import "../CSS/reset.css";
-@import "../CSS/styles.css";
-@import "../CSS/typography.css";
+@import "colours.css";
+@import "forms.css";
+@import "modals.css";
+@import "reset.css";
+@import "styles.css";
+@import "typography.css";
 
 html{ 
     box-sizing: border-box;
@@ -83,7 +83,7 @@ nav > .search__cart{
 /* BANNER */
 #banner{
     margin-top: 70px;
-    background-image: url("../../ASSETS/banner.png");
+    background-image: url("../ASSETS/banner.png");
     background-repeat: repeat-x;
     height: 200px;
 }
@@ -227,7 +227,7 @@ div > hr {
 #background__guitar{
     width: auto;
     height: 100vh;
-    background-image: url("../../ASSETS/guitar_background.png");
+    background-image: url("../ASSETS/guitar_background.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -235,7 +235,7 @@ div > hr {
 #background__piano{
     width: auto;
     height: 100vh;
-    background-image: url("../../ASSETS/piano.png");
+    background-image: url("../ASSETS/piano.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -251,7 +251,7 @@ div > hr {
 #background__brass{
     width: 100vw;
     height: 500px;
-    background-image: url("../../ASSETS/trumpet.png");
+    background-image: url("../ASSETS/trumpet.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -260,7 +260,7 @@ div > hr {
     width: 100vw;
     height: 500px;
     margin-left: auto;
-    background-image: url("../../ASSETS/drums.png");
+    background-image: url("../ASSETS/drums.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
