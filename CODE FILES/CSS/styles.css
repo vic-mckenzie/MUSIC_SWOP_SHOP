@@ -269,7 +269,7 @@ div > hr {
 #shop-guitars{
     position: absolute;
     right: 150px;
-    top: 700px;
+    top: 85vh;
     padding: 1rem 2rem;
     border-radius: 2rem;
     font-size: 1.5rem;
@@ -278,7 +278,7 @@ div > hr {
 #shop-keyboards{
     position: absolute;
     right: 135px;
-    top: 1600px;
+    top: 200vh;
     padding: 1rem 2rem;
     border-radius: 2rem;
     font-size: 1.5rem;
@@ -287,7 +287,7 @@ div > hr {
 #shop-brass{
     position: absolute;
     left: 150px;
-    top: 2200px;
+    top: 270vh;
     padding: 1rem 2rem;
     border-radius: 2rem;
     font-size: 1.5rem;
@@ -296,7 +296,7 @@ div > hr {
 #shop-drums{
     position: absolute;
     right: 150px;
-    top: 2200px;
+    top: 270vh;
     padding: 1rem 2rem;
     border-radius: 2rem;
     font-size: 1.5rem;
